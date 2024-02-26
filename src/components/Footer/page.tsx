@@ -12,26 +12,18 @@ import animationFooter from "./animation"
 const Footer = () => {
     return (
         <section className="bg-blue-500 flex items-center justify-around p-10">
-            <motion.div
-                initial={animationFooter.initial}
-                whileInView={animationFooter.whileInView}
-                exit={animationFooter.exit}
-                transition={animationFooter.transition}
+            <div
             >
                 <Logo src={LogoBR23} />
                 <p className="text-white mt-5">Copyright © 2024 | BR23.<br />Todos os direitos reservados.</p>
-            </motion.div>
-            <motion.ul
-                initial={animationFooter.initial}
-                whileInView={animationFooter.whileInView}
-                exit={animationFooter.exit}
-                transition={animationFooter.transition}
+            </div>
+            <ul
                 className="flex gap-4">
                 <Link href={""}><li><Image className="w-5" src={FacebookIcon} alt="" /></li></Link>
                 <Link href={""}><li><Image className="w-5" src={InstagramIcon} alt="" /></li></Link>
                 <Link href={""}><li><Image className="w-5" src={LinkedinIcon} alt="" /></li></Link>
                 <Link href={""}><li><Image className="w-5" src={YoutubeIcon} alt="" /></li></Link>
-            </motion.ul>
+            </ul>
         </section >
     )
 }
