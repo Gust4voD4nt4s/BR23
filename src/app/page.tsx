@@ -55,7 +55,7 @@ export default function Home() {
               <motion.li
                 initial={{ opacity: 0, y: 230 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, delay: index * 0.2 }}
+                transition={{ duration: 0.5, delay: index * 0.2 }}
                 key={card.id}
               >
                 <Link href={`/Empreendimentos/${card.id}`}>
